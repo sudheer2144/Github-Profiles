@@ -37,7 +37,7 @@ function addToUI(data){
     let cardHTML = `
         <div class="card">
             <div>
-                <img src=`${data.avatar}` alt="" class="avatar">
+                <img src=`${data.avatar_url}` alt="" class="avatar">
             </div>
             <div class="user-info">
                 <h2>${name}</h2>
