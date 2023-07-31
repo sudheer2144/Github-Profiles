@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     background-color: #2a2a72;
     color: white;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@ body {
 }
 
 .user-form input::placeholder {
-    color:  #2e1c4a;
+    color: #2e1c4a;
 }
 
 .user-form input:focus {
@@ -64,7 +64,6 @@ body {
 .user-info {
     color: #eeee;
     margin-left: 2rem;
-
 }
 
 .user-info h2 {
@@ -75,12 +74,12 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
     padding: 0;
     max-width: 400px;
 }
 
-.user-info ul li strong{
+.user-info ul li strong {
     font-size: 0.9rem;
     margin-left: 0.2rem;
 }
@@ -97,13 +96,22 @@ body {
     display: inline-block;
 }
 
-@media(max-width : 500px){
+@media(max-width : 1080px) {
     .card {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
 
     .user-form {
         max-width: 400px;
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
     }
 }
