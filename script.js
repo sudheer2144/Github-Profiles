@@ -33,11 +33,12 @@ function addToUI(data){
 
     let name = (data.name == null) ? "No Name":data.name;
     let bio = (data.bio == null) ? "No Bio":data.bio;
+    let avatar = data.avatar_url;
 
     let cardHTML = `
         <div class="card">
             <div>
-                <img src=`${data.avatar_url}` alt="" class="avatar">
+                <img src=${avatar} alt="" class="avatar">
             </div>
             <div class="user-info">
                 <h2>${name}</h2>
